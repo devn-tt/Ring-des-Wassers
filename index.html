@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring des Wassers</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Ring des Wassers</h1>
+        <div id="setup">
+            <label for="numPlayers">Wie viele Spieler? (1-20): </label>
+            <input type="number" id="numPlayers" min="1" max="20">
+            <button onclick="setupPlayers()">Spieler Hinzufügen</button>
+            <div id="playerNames" class="hidden">
+                <h2>Spielernamen</h2>
+                <div id="playersContainer"></div>
+                <button onclick="startGame()">Spiel Starten</button>
+            </div>
+        </div>
+        <div id="game" class="hidden">
+            <h2 id="round">Runde 1</h2>
+            <p id="currentRule"></p>
+            <h3 id="drawnCard"></h3>
+            <p id="currentPlayer"></p>
+            <button id="drawCardButton" onclick="drawCard()">Karte Ziehen</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Spielregeln</h2>
+        <textarea readonly>
+1 Trink, man selber muss trinken
+
+2 gib ein Trink, man kann jemanden aussuchen der trinken muss
+
+3 Krasser Reim, man selber sagt ein wort und dann muss die Person links von einem selbst ein Reim drauf finden das geht so lang bis jemand kein wort mehr weiß
+
+4 Kumpel, man sucht jemanden aus der immer mit dir zusammen trinken muss und anders herum
+
+5 Ich hab noch nie, ein auto geflogen und jeder der das schonmal gemacht hat muss trinken
+
+6 Hölle, man muss den Boden berühren der letzte muss trinken
+
+7 Himmel, man macht die Hand in die Luft der letzte muss trinken
+
+8 Kategorie, man sagt zum beispiel Auto und jeder muss sachen sagen die zu dieser Kategorie gehören im Uhrzeigersinn der der nicht weiter weiß muss trinken
+
+9 Ich hab schon mal, eine Taube getreten und jeder der das noch nie gemacht hat muss trinken
+
+10 Frage Runde, man fragt jemanden egal wen etwas und er muss wiederrum jemanden fragen, das geht solang bis jemand eine frage beantwortet
+
+Bube Alle Herren müssen trinken
+
+Dame alle Damen müssen trinken
+
+König Fragemeister, wenn jemand deine farge Beantowrtet muss er trinken, das geht solang bis jemand anders die karte zieht
+
+Ass Wasserfall, man selbst fängt an zu trinken und alle anderen auch und man darf erst aufhören wenn die person die, die Karte gezogen hat aufhört
+
+Joker Alle müssen trinken außer man selbst
+        </textarea>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking to external JavaScript file -->
+</body>
+</html>
