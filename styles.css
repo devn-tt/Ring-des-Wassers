@@ -1,13 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px;
     background-color: #000;
     color: #00356b; /* Yale Blue color */
 }
 .container {
-    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     background-color: #1a1a1a; /* Slightly lighter black for contrast */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
