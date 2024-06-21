@@ -54,7 +54,7 @@ function drawCard() {
     }
 
     const card = deck.pop();
-    document.getElementById('drawnCard').innerText = `${players[currentPlayerIndex]} hat eine ${card} gezogen.`;
+    document.getElementById('drawnCard').innerText = `${players[currentPlayerIndex]} hat ${card} gezogen.`;
 
     if (previousCard === card) {
         alert(`${players[currentPlayerIndex]}, du hast die gleiche Karte (${card}) innerhalb von 3 Zügen zweimal gezogen! Trinke einen Schluck Wasser.`);
